@@ -86,7 +86,7 @@ class JsonFile extends BaseJsonFile
     /**
      * {@inheritdoc}
      */
-    public function write(array $hash, int $options = 448)
+    public function write(array $hash, $options = 448)
     {
         self::$encodeArrayKeys = $this->getArrayKeys();
         self::$encodeIndent = $this->getIndent();
